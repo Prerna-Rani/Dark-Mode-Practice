@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/darklightmode.css">
+    <title>Document</title>
+</head>
+
+<body class="dark" id="main">
+    <button onclick="f1()" id="btn">Light </button>
+    <div class="box_1">
+        <h1>Prerna Rani</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolore quidem deleniti sint cupiditate fugiat
+            ullam voluptas doloribus, blanditiis inventore? Nemo maiores temporibus delectus soluta sit ducimus quos.
+            Suscipit velit aut delectus, adipisci atque recusandae provident eligendi iste aspernatur laboriosam dolorum
+            eius. Qui sequi nemo, obcaecati amet adipisci quae perspiciatis.</p>
+    </div>
+    <script>
+        function f1() {
+            let main = document.getElementById("main");
+            let btn = document.getElementById("btn");
+            if (main.className === "dark") {
+                main.className = "light";
+                btn.innerHTML = "dark";
+            } else {
+                main.className = "dark";
+                btn.innerHTML = "Light";
+            }
+        }
+        function f2() {
+            let theme = document.getElementById("main").className;
+            if (theme !== "dark") {
+                document.getElementById("main").className = "dark";
+            }
+        }
+    </script>
+</body>
+
+</html>
